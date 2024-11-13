@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Assignment 02</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- We are using a CSS Reset file to standardize browser default css -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- This is where all of our awesome CSS code goes -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+<header>
+  <h2 class = "title">The San Fernando Foundation</h2>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Contact.html">Contact us</a></li>>
+    <li><a href="instagram.com">Instagram</a></li>
+  </ul>
+
+</nav>
+
+<section>
+    <h2>Contact us</h2>
+    <form>
+      <fieldset>
+        <label for="name">Name:</label>
+        <input
+        type="text"
+        id="name"
+        name="name"
+        autocomplete="name"
+        required
+        />
+        <label for="email">Email:</label>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        required
+        />
+        <label for="phone">Phone:</label>
+        <input
+        type="tel"
+        id="phone"
+        name="phone"
+        autocomplete="tel"
+        required
+        />
+      </fieldset>
+
+      <p>Message:</p>
+
+      <fieldset>
+        <textarea
+          id="textarea"
+          name="feedback"
+          required
+        ></textarea>
+        <input type="checkbox" id = "checkbox" name = "checkbox" required/>
+        <label for="checkbox">Sample Confirmation</label>
+        <input type="submit" value = "Submit Message" />
+      </fieldset>
+    </form>
+  </section>
